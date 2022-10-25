@@ -5,7 +5,8 @@ body {
 }
 
 .wrapper {
-	background: gray;
+	background-image: url("music1.jpg");
+	background-size: cover;
 	display:flex;
 	flex-flow: column;
 	justify-content: center;
@@ -21,7 +22,7 @@ body {
 
 .black-keys {
 	position: fixed;
-	top: 60px;
+	top: 5%;
 	display: flex;
 	gap: 29px;
 	z-index: 1;
@@ -29,7 +30,7 @@ body {
 
 .white-keys {
 	position: fixed;
-	top: 60px;
+	top: 5%;
 	display: flex;
 }
 .key.white {
