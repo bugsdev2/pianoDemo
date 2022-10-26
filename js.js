@@ -7,4 +7,18 @@ window.addEventListener('mousedown', function(e){
 			item.play();
 		}
 	});
+	
+	if (e.target.getAttribute('class') == 'key black no-display') {
+		return;
+	} 
+	e.target.classList.add('key-press');
+
 })
+
+const keys = document.querySelectorAll('.key')
+
+keys.forEach(key => key.addEventListener('transitionend', removetransition));
+
+function removetransition(){
+	this.classList.remove('key-press');
+}
